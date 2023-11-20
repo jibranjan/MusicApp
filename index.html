@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en" class="m-0 p-0">
+<head>
+    <script src="https://kit.fontawesome.com/1b09ae3a4c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="jpg" href="ninjaMusicIcon.jpg">
+    <title>Ninja's Music</title>
+</head>
+<body class="px-6 min-h-screen font-sans text-white" style="background-image: linear-gradient(180deg, #0c1027 35%, rgb(71, 18, 71)170%); background-attachment: fixed;">
+    <header class="flex fixed justify-between w-full left-0 px-6 pt-4 top-0 z-20" style="background-color: #0c1027;">
+        <div class="ninja-image">
+            <a href="./index.html"><img src="./musicNinja2.png" class="-ml-2 h-14 sm:h-20 lg:h-24"></a>
+        </div>
+        <div class="inside-ham hidden md:flex md:w-7/12 items-center md:justify-around lg:justify-around xl:justify-between">
+            <div class="fav-part text-xl">
+                <a href="#">Favourites</a>
+            </div>
+            <div class="search-part pl-2 h-7 bg-violet-950 opacity-80 rounded-md hover:bg-violet-900 hover:ring-1">
+                <i class="fa-solid fa-magnifying-glass text-white"></i>
+                <input type="search" name="search-songs" placeholder="Search" class="placeholder:text-gray-500 pl-2 w-40 h-7 bg-inherit border-none rounded-md outline-none">
+                <i class="fa-solid fa-microphone pr-2"></i>
+            </div>
+        </div>
+        <div class="top-right flex w-36 sm:w-44 h-20 items-center lg:w-36">
+            <div class="mr-3 w-24 lg:w-32 flex justify-between">
+                <button type="button" class="bell-icon">
+                    <i class="fa-solid fa-bell md:ml-16 lg:ml-6 text-xl sm:text-2xl">
+                        <span class="text-red-600 absolute top-7 lg:top-9 text-4xl">
+                            .
+                        </span>
+                    </i>
+                </button>
+                <button type="button" class="group hamburger">
+                    <i class="fa-solid fa-bars md:hidden text-xl sm:text-2xl sm:mr-3"></i> 
+                    <div class="inside-ham2 w-3/4 sm:w-5/6 hidden justify-between absolute top-20 right-12 mt-5 group-focus:flex md:group-focus:hidden">
+                        <div class="fav-part2 sm:text-xl">
+                            <a href="#">Favourites</a>
+                        </div>
+                        <div class="search-part2 px-2 bg-violet-950 opacity-80 rounded-md hover:ring-1 hover:bg-violet-900">
+                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                            <input type="search" name="search-songs" placeholder="Search" class="pl-1 w-40 sm:w-48 placeholder:text-gray-500 bg-inherit outline-none">
+                            <i class="fa-solid fa-microphone "></i>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="profile ml-3 w-20 sm:w-16 lg:w-40">
+                <button type="button"><img src="./main-image.jpeg" alt="" class="rounded-full"></button>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <div class="queue mt-36 flex flex-col items-end mr-2">
+            <button class="text-green-500 peer text-lg lg:hidden rounded-md hover:bg-slate-400 hover:text-white hover:bg-opacity-50 transition-all ease-in-out duration-100 py-1 px-2 -mr-2">Queue</button>
+            <div class="inside-queue h-screen overflow-y-scroll absolute right-0.5 top-0.5 z-50 hidden peer-focus:block">
+                <div class="queue-top flex justify-between items-center w-96 h-16 bg-slate-800">
+                    <h1 class="ml-5 text-2xl">Queue</h1>
+                    <button>
+                        <i class="fa-solid fa-xmark mr-5 text-2xl"></i>
+                    </button>
+                </div>
+                <ol class="list-decimal list-outside flex flex-col items-center py-5 gap-y-1 bg-black" style="background-image: linear-gradient(rgba(87, 26, 87, 0.3), rgba(22, 71, 22, 0.3));">
+                    <li class="">
+                        <div class="inside-list flex w-72 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                                <button class="queue-img w-14 group relative">
+                                    <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK57M7EWw/size_l.webp" alt="">
+                                    <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                                </button>
+                                <div class="a-middle flex flex-col justify-around">
+                                    <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                    </div>
+                                    <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex w-72 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/Rz4W8evbxD/4W8eMvY1bx/size_l.jpg" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex w-72 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_l.jpg" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex w-72 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/R7vKX6WmrP/vKX60dmPWm/size_l.webp"  alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex w-72 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/DwPKOxB3qV/PKOxed263q/size_l.webp" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex w-72 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqZoKyQ/Z9bqlvveWy/size_l.webp" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex w-72 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK57M7EWw/size_l.webp" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex w-72 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/Rz4W8evbxD/4W8eMvY1bx/size_l.jpg" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex w-72 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_l.jpg" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex w-72 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/R7vKX6WmrP/vKX60dmPWm/size_l.webp" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            
+        </div>
+    </aside>
+    <main class="flex justify-between mb-36">
+        <div class="main-left lg:w-3/5 xl:w-2/3">
+            <div class="artist-images mt-20 mx-auto flex gap-2 sm:gap-0" >
+                <div class="img1 w-6/12 flex justify-center hover:scale-125 hover:z-10 transition-all duration-500 ease-in-out">
+                    <img class="h-28 sm:h-36 md:w-2/3 lg:h-36 lg:w-11/12 xl:h-44 sm:w-5/6" src="https://s3images.zee5.com/wp-content/uploads/2022/01/dffffffffffffgdfg2022010604495820220106052713.jpg">
+                </div>
+                <div class="img2 w-6/12 flex justify-center hover:scale-125 hover:z-10 transition-all duration-500 ease-in-out">
+                    <img class="h-28 sm:h-36 md:w-2/3 lg:h-36 lg:w-11/12 xl:h-44 sm:w-5/6" src="https://filmfare.wwmindia.com/content/2022/apr/arijitsingh11650885572.jpg">
+                </div>
+                <div class="img3 w-6/12 flex justify-center hover:scale-125 hover:z-10 transition-all duration-500 ease-in-out">
+                    <img class="h-28 sm:h-36 md:w-2/3 lg:h-36 lg:w-11/12 xl:h-44 w-36 sm:w-5/6" src="https://static.theprint.in/wp-content/uploads/2022/01/Atif-Aslam-1.jpg">
+                </div>
+            </div>
+            
+            <div class="latest-release flex flex-col justify-center items-center mt-20">
+                <h1 class="lr-heading text-xl sm:text-2xl lg:text-3xl mb-10">Latest Release</h1>
+                <div class="onism-section flex justify-center flex-wrap gap-16">
+                    <div class="onism-1">
+                        <div class="onism-img w-36 sm:w-40  group relative">
+                            <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/cc/2b/4f/cc2b4fa5-b8f1-3af1-8e2e-dc647a9e49eb/816216026648.jpg/316x316bb.webp">
+                            <i class="fa-solid fa-play hidden absolute mr-3 top-1/2 left-1/2 group-hover:flex"></i>
+                        </div>
+                        <div class="onism-top flex justify-between my-2">
+                            <div class="onism-name text-xl">
+                                <h1>Onism</h1>
+                            </div>
+                            <button class="onism-more group">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <div class="inside-onism-more z-10 hidden group-focus:flex absolute flex-col rounded-md p-4 bg-white text-gray-500 gap-y-2">
+                                    <div class="play-now flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-play"></i>
+                                        <h3>Play Now</h3>
+                                    </div>
+                                    <div class="add-to-queue flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <h3>Add To Queue</h3>
+                                    </div>
+                                    <div class="add-to-fav flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <h3>Add to Favourites</h3>
+                                    </div>
+                                    <div class="get-info flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <h3>Get Info</h3>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="onism-bottum flex justify-between text-xs">
+                            <div class="onism-date">
+                                <h3>Nov 04,2023</h3>
+                            </div>
+                            <div class="onism-duration">
+                                <h3>4:44</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onism-2">
+                        <div class="onism-img w-36 sm:w-40 group relative">
+                            <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/cc/2b/4f/cc2b4fa5-b8f1-3af1-8e2e-dc647a9e49eb/816216026648.jpg/316x316bb.webp">
+                            <i class="fa-solid fa-play hidden absolute mr-3 top-1/2 left-1/2 group-hover:flex"></i>
+                        </div>
+                        <div class="onism-top flex justify-between my-2">
+                            <div class="onism-name text-xl">
+                                <h1>Onism</h1>
+                            </div>
+                            <button class="onism-more group">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <div class="inside-onism-more z-10 hidden group-focus:flex absolute right-5 flex-col rounded-md p-4 bg-white text-gray-500 gap-y-2">
+                                    <div class="play-now flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-play"></i>
+                                        <h3>Play Now</h3>
+                                    </div>
+                                    <div class="add-to-queue flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <h3>Add To Queue</h3>
+                                    </div>
+                                    <div class="add-to-fav flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <h3>Add to Favourites</h3>
+                                    </div>
+                                    <div class="get-info flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <h3>Get Info</h3>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="onism-bottum flex justify-between text-xs">
+                            <div class="onism-date">
+                                <h3>Nov 04,2023</h3>
+                            </div>
+                            <div class="onism-duration">
+                                <h3>4:44</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onism-3">
+                        <div class="onism-img w-36 sm:w-40 group relative">
+                            <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/cc/2b/4f/cc2b4fa5-b8f1-3af1-8e2e-dc647a9e49eb/816216026648.jpg/316x316bb.webp">
+                            <i class="fa-solid fa-play hidden absolute mr-3 top-1/2 left-1/2 group-hover:flex"></i>
+                        </div>
+                        <div class="onism-top flex justify-between my-2">
+                            <div class="onism-name text-xl">
+                                <h1>Onism</h1>
+                            </div>
+                            <button class="onism-more group">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <div class="inside-onism-more z-10 hidden group-focus:flex absolute flex-col rounded-md p-4 bg-white text-gray-500 gap-y-2">
+                                    <div class="play-now flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-play"></i>
+                                        <h3>Play Now</h3>
+                                    </div>
+                                    <div class="add-to-queue flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <h3>Add To Queue</h3>
+                                    </div>
+                                    <div class="add-to-fav flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <h3>Add to Favourites</h3>
+                                    </div>
+                                    <div class="get-info flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <h3>Get Info</h3>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="onism-bottum flex justify-between text-xs">
+                            <div class="onism-date">
+                                <h3>Nov 04,2023</h3>
+                            </div>
+                            <div class="onism-duration">
+                                <h3>4:44</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onism-4">
+                        <div class="onism-img w-36 sm:w-40 group relative">
+                            <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/cc/2b/4f/cc2b4fa5-b8f1-3af1-8e2e-dc647a9e49eb/816216026648.jpg/316x316bb.webp">
+                            <i class="fa-solid fa-play hidden absolute mr-3 top-1/2 left-1/2 group-hover:flex"></i>
+                        </div>
+                        <div class="onism-top flex justify-between my-2">
+                            <div class="onism-name text-xl">
+                                <h1>Onism</h1>
+                            </div>
+                            <button class="onism-more group">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <div class="inside-onism-more z-10 hidden group-focus:flex absolute right-5 flex-col rounded-md p-4 bg-white text-gray-500 gap-y-2">
+                                    <div class="play-now flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-play"></i>
+                                        <h3>Play Now</h3>
+                                    </div>
+                                    <div class="add-to-queue flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <h3>Add To Queue</h3>
+                                    </div>
+                                    <div class="add-to-fav flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <h3>Add to Favourites</h3>
+                                    </div>
+                                    <div class="get-info flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <h3>Get Info</h3>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="onism-bottum flex justify-between text-xs">
+                            <div class="onism-date">
+                                <h3>Nov 04,2023</h3>
+                            </div>
+                            <div class="onism-duration">
+                                <h3>4:44</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onism-5">
+                        <div class="onism-img w-36 sm:w-40 group relative">
+                            <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/cc/2b/4f/cc2b4fa5-b8f1-3af1-8e2e-dc647a9e49eb/816216026648.jpg/316x316bb.webp">
+                            <i class="fa-solid fa-play hidden absolute mr-3 top-1/2 left-1/2 group-hover:flex"></i>
+                        </div>
+                        <div class="onism-top flex justify-between my-2">
+                            <div class="onism-name text-xl">
+                                <h1>Onism</h1>
+                            </div>
+                            <button class="onism-more group">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <div class="inside-onism-more z-10 hidden group-focus:flex absolute right-5 flex-col rounded-md p-4 bg-white text-gray-500 gap-y-2">
+                                    <div class="play-now flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-play"></i>
+                                        <h3>Play Now</h3>
+                                    </div>
+                                    <div class="add-to-queue flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <h3>Add To Queue</h3>
+                                    </div>
+                                    <div class="add-to-fav flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <h3>Add to Favourites</h3>
+                                    </div>
+                                    <div class="get-info flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <h3>Get Info</h3>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="onism-bottum flex justify-between text-xs">
+                            <div class="onism-date">
+                                <h3>Nov 04,2023</h3>
+                            </div>
+                            <div class="onism-duration">
+                                <h3>4:44</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onism-6">
+                        <div class="onism-img w-36 sm:w-40 group relative">
+                            <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/cc/2b/4f/cc2b4fa5-b8f1-3af1-8e2e-dc647a9e49eb/816216026648.jpg/316x316bb.webp">
+                            <i class="fa-solid fa-play hidden absolute mr-3 top-1/2 left-1/2 group-hover:flex"></i>
+                        </div>
+                        <div class="onism-top flex justify-between my-2">
+                            <div class="onism-name text-xl">
+                                <h1>Onism</h1>
+                            </div>
+                            <button class="onism-more group">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <div class="inside-onism-more z-10 hidden group-focus:flex absolute right-5 flex-col rounded-md p-4 bg-white text-gray-500 gap-y-2">
+                                    <div class="play-now flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-play"></i>
+                                        <h3>Play Now</h3>
+                                    </div>
+                                    <div class="add-to-queue flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <h3>Add To Queue</h3>
+                                    </div>
+                                    <div class="add-to-fav flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <h3>Add to Favourites</h3>
+                                    </div>
+                                    <div class="get-info flex items-center gap-3 hover:text-black">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <h3>Get Info</h3>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="onism-bottum flex justify-between text-xs">
+                            <div class="onism-date">
+                                <h3>Nov 04,2023</h3>
+                            </div>
+                            <div class="onism-duration">
+                                <h3>4:44</h3>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div class="popular-artist mt-20 flex flex-col justify-center items-center">
+                <h1 class="pa-heading text-xl sm:text-2xl lg:text-3xl mb-10">Popular Artists</h1>
+                <div class="artists-section flex flex-wrap w-full items-center justify-center gap-y-10 xl:gap-x-5">
+                    <div class="artist1 flex flex-col justify-between items-center w-32 h-28">
+                        <a href="playlistPage.html">
+                            <button class="artistImage group relative">
+                                <img class="rounded-full transition-all ease-in-out duration-500 h-20 w-20 group-hover:opacity-50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg/330px-Ed_Sheeran-6886_%28cropped%29.jpg" alt="Ed Sheeran">
+                                <i class="fa-solid fa-play hidden absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3 group-hover:flex opacity-100 peer"></i>
+                            </button>
+                        </a>
+                        <div class="artistName">Ed Sheeran</div>
+                    </div>
+                    <div class="artist2 flex flex-col justify-between items-center w-32 h-28">
+                        <a href="playlistPage.html">
+                            <button class="artistImage group relative">
+                                <img class="rounded-full transition-all ease-in-out duration-500 h-20 w-20 group-hover:opacity-50" src="https://sun6-20.userapi.com/s/v1/ig2/8z3EU9XKmsgIKjNwJlW9E_GifHOYIrDx7ABpSMzi9zKX3honMndGSGvnxRdqbCFiM-iFGlUt2Rs-C7WQWrnHSE57.jpg?size=200x200&quality=96&crop=0,0,2160,2160&ava=1" alt="ColdPlay">
+                                <i class="fa-solid fa-play hidden absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3 group-hover:flex opacity-100"></i>
+                            </button>
+                        </a>
+                        <div class="artistName">Cold Play</div>
+                    </div>
+                    <div class="artist3 flex flex-col justify-between items-center w-32 h-28">
+                        <a href="playlistPage.html">
+                            <button class="artistImage group relative">
+                                <img class="rounded-full transition-all ease-in-out duration-500 h-20 w-20 group-hover:opacity-50" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/A0E7/production/_100819114_gettyimages-911518800.jpg.webp" alt="ZaynMalik">
+                                <i class="fa-solid fa-play hidden absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3 group-hover:flex opacity-100"></i>
+                            </button>
+                        </a>
+                        <div class="artistName">Zayn Malik</div>
+                    </div>
+                    <div class="artist4 flex flex-col justify-between items-center w-32 h-28">
+                        <a href="playlistPage.html">
+                            <button class="artistImage group relative">
+                                <img class="rounded-full transition-all ease-in-out duration-500 h-20 w-20 group-hover:opacity-50" src="https://wallpaperset.com/w/full/5/3/d/294063.jpg" alt="CharliePuth">
+                                <i class="fa-solid fa-play hidden absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3 group-hover:flex opacity-100"></i>
+                            </button>
+                        </a>
+                        <div class="artistName">Charlie Puth</div>
+                    </div>
+                    <div class="artist5 flex flex-col justify-between items-center w-32 h-28">
+                        <a href="playlistPage.html">
+                            <button class="artistImage group relative">
+                                <img class="rounded-full transition-all ease-in-out duration-500 h-20 w-20 group-hover:opacity-50" src="https://c4.wallpaperflare.com/wallpaper/516/72/957/imagine-dragons-4k-pc-full-hd-wallpaper-preview.jpg" alt="Ed Sheeran">
+                                <i class="fa-solid fa-play hidden absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3 group-hover:flex opacity-100"></i>
+                            </button>
+                        </a>
+                        <div class="artistName">Imagine Dragons</div>
+                    </div>
+                    <div class="artist6 flex flex-col justify-between items-center w-32 h-28">
+                        <a href="playlistPage.html">
+                            <button class="artistImage group relative">
+                                <img class="rounded-full transition-all ease-in-out duration-500 h-20 w-20 group-hover:opacity-50" src="https://wallpapercave.com/dwp1x/wp9152346.jpg" alt="Ed Sheeran">
+                                <i class="fa-solid fa-play hidden absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3 group-hover:flex opacity-100"></i>
+                            </button>
+                        </a>
+                        <div class="artistName">Bruno Mars</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stations flex flex-col justify-center items-center mt-20">
+                <h1 class="station-heading text-xl sm:text-2xl lg:text-3xl mb-10">Stations</h1>
+                <div class="station-section-1 py-8 flex flex-wrap w-11/12 items-center justify-center gap-y-7 gap-x-5 md:gap-x-10 xl:gap-x-14 bg-gray-900 rounded-3xl">
+                    <div class="station-1">
+                        <a href="playlistPage.html">
+                            <button class="station1 group transition-all ease-in-out duration-300 hover:-translate-y-5">
+                                <img class="rounded-full transition-all ease-in duration-300 h-20 w-20 opacity-70 group-hover:opacity-100 hover:shadow-md hover:shadow-gray-50" src="https://img.freepik.com/premium-vector/recording-studio-retro-music-vinyl-record-vector-poster-retro-style_538191-988.jpg?w=740" alt="retro">
+                            </button>
+                        </a>
+                    </div>
+                    <div class="station-2">
+                        <a href="playlistPage.html">
+                            <button class="station1 group transition-all ease-in-out duration-300 hover:-translate-y-5">
+                                <img class="rounded-full transition-all ease-in duration-300 h-20 w-20 opacity-70 group-hover:opacity-100 hover:shadow-md hover:shadow-gray-50" src="https://a10.gaanacdn.com/gn_pl_img/playlists/kGxbnw0Ky4/xbnwAyeVKy/size_l_1664444046.webp" alt="love">
+                            </button>
+                        </a>
+                    </div>
+                    <div class="station-3">
+                        <a href="playlistPage.html">
+                            <button class="station1 group transition-all ease-in-out duration-300 hover:-translate-y-5">
+                                <img class="rounded-full transition-all ease-in duration-300 h-20 w-20 opacity-70 group-hover:opacity-100 hover:shadow-md hover:shadow-gray-50" src="https://a10.gaanacdn.com/gn_pl_img/playlists/Bp1bAynb02/1bALJn6NW0/size_l_1642193753.webp" alt="chill">
+                            </button>
+                        </a>
+                    </div>
+                    <div class="station-4">
+                        <a href="playlistPage.html">
+                            <button class="station1 group transition-all ease-in-out duration-300 hover:-translate-y-5">
+                                <img class="rounded-full transition-all ease-in duration-300 h-20 w-20 opacity-70 group-hover:opacity-100 hover:shadow-md hover:shadow-gray-50" src="https://a10.gaanacdn.com/gn_pl_img/playlists/2lV3dl13Rg/V3dvXE1DbR/size_l_1658131553.webp" alt="workout">
+                            </button>
+                        </a>
+                    </div>
+                    <div class="station-5">
+                        <a href="playlistPage.html">
+                            <button class="station1 group transition-all ease-in-out duration-300 hover:-translate-y-5">
+                                <img class="rounded-full transition-all ease-in duration-300 h-20 w-20 opacity-70 group-hover:opacity-100 hover:shadow-md hover:shadow-gray-50" src="https://play-lh.googleusercontent.com/qShQl34o22dE3_59G9DMFKYtTS7bS8v57hUDwjB1Mhn_-F8n8tgd7EEYEcSQs7rO52nJ=h200" alt="rock">
+                            </button>
+                        </a>
+                    </div>
+                    <div class="station-6">
+                        <a href="playlistPage.html">
+                            <button class="station1 group transition-all ease-in-out duration-300 hover:-translate-y-5">
+                                <img class="rounded-full transition-all ease-in duration-300 h-20 w-20 opacity-70 group-hover:opacity-100 hover:shadow-md hover:shadow-gray-50" src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_believe/music/3616552713007/1611771331/srch_believe_A10320WT037793612Y.jpg" alt="pop">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="station-section-2 mt-4 flex flex-wrap gap-x-3 md:gap-x-10 lg:gap-x-2 xl:gap-x-16 gap-y-4 justify-around">
+                    <div class="sec1 h-28 w-44">
+                        <a class="relative" href="playlistPage.html">
+                            <div class="thisStationImage opacity-50 hover:opacity-100 transition-all ease-in duration-300 peer">
+                                <img class="h-28 w-full" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F184375039%2F474927372937%2F1%2Foriginal.20211111-155142?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C236%2C4724%2C2362&s=ff52e826c551abbd9a90a39cccc5c303" alt="Party">
+                            </div>
+                            <div class="text text-lg absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 transition-all ease-in duration-1000 peer-hover:hidden">PARTY</div>
+                        </a>
+                    </div>
+                    <div class="sec2 h-28 w-44">
+                        <a class="relative" href="playlistPage.html">
+                            <div class="thisStationImage opacity-50 hover:opacity-100 transition-all ease-in duration-300 peer">
+                                <img class="h-28 w-full" src="https://musictech.com/wp-content/uploads/2019/10/tutorial-create-edm-free-header@1400x1050-696x522.jpg" alt="Party">
+                            </div>
+                            <div class="text text-lg absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 transition-all ease-in duration-1000 peer-hover:hidden">ELECTRONIC</div>
+                        </a>
+                    </div>
+                    <div class="sec3 h-28 w-44">
+                        <a class="relative" href="playlistPage.html">
+                            <div class="thisStationImage opacity-50 hover:opacity-100 transition-all ease-in duration-300 peer">
+                                <img class="h-28 w-full" src="https://www.outlookindia.com/outlooktraveller/resizer.php?src=https://www.outlookindia.com/outlooktraveller/public/uploads/articles/explore/road_journey.jpg&w=1366&h=500" alt="Party">
+                            </div>
+                            <div class="text text-lg absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 transition-all ease-in duration-1000 peer-hover:hidden">ROAD TRIP</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-english mt-20">
+                <div class="le-header text-xl mb-10">
+                    <h1>Latest English</h1>
+                </div>
+                <div class="albumsSec flex flex-wrap justify-around mx-3 gap-y-5 gap-x-4 sm:gap-x-5 md:gap-x">
+                    <div class="song1 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK57M7EWw/size_l.webp" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                    <div class="song2 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/Rz4W8evbxD/4W8eMvY1bx/size_l.jpg" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                    <div class="song3 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_l.jpg" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                    <div class="song4 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/R7vKX6WmrP/vKX60dmPWm/size_l.webp" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                    <div class="song5 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/DwPKOxB3qV/PKOxed263q/size_l.webp" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                    <div class="song6 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqZoKyQ/Z9bqlvveWy/size_l.webp" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-hindi mt-20">
+                <div class="le-header text-xl mb-10">
+                    <h1>Latest Hindi</h1>
+                </div>
+                <div class="albumsSec flex flex-wrap justify-around mx-3 gap-y-5 gap-x-4 sm:gap-x-5 md:gap-x">
+                    <div class="song1 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK57M7EWw/size_l.webp" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                    <div class="song2 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/Rz4W8evbxD/4W8eMvY1bx/size_l.jpg" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                    <div class="song3 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_l.jpg" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                    <div class="song4 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/R7vKX6WmrP/vKX60dmPWm/size_l.webp" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                    <div class="song5 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/DwPKOxB3qV/PKOxed263q/size_l.webp" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                    <div class="song6 flex flex-col items-center gap-y-2 rounded-md hover:shadow-md hover:shadow-slate-50 hover:-translate-y-1 transition-all ease-out duration-300">
+                        <a href="playlistPage.html">
+                            <button class="image">
+                                <img class="h-32 rounded-md" src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqZoKyQ/Z9bqlvveWy/size_l.webp" alt="">
+                            </button>
+                        </a>
+                        <a href="playlistPage.html">
+                            <button class="songName text-md">
+                                <h2>Song Name</h2>
+                            </button>
+                        </a>
+                        <div class="date text-xs text-gray-500">
+                            <h5>Nov 19,2023</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="inside-queue xl:w-1/3 h-4/5 z-20 hidden lg:block fixed right-0 bottom-0 top-36 -mr-5 overflow-y-scroll">
+                <div class="queue-top flex justify-between items-center w-96 h-16">
+                    <h1 class="ml-10 text-2xl">QUEUE</h1>
+                </div>
+                <ol class="list-decimal list-outside flex flex-col items-center py-5 gap-y-3">
+                    <li class="">
+                        <div class="inside-list flex lg:w-72 xl:w-80 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK57M7EWw/size_l.webp" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex lg:w-72 xl:w-80 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/Rz4W8evbxD/4W8eMvY1bx/size_l.jpg" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex lg:w-72 xl:w-80 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_l.jpg" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex lg:w-72 xl:w-80 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/R7vKX6WmrP/vKX60dmPWm/size_l.webp"  alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex lg:w-72 xl:w-80 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/DwPKOxB3qV/PKOxed263q/size_l.webp" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex lg:w-72 xl:w-80 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqZoKyQ/Z9bqlvveWy/size_l.webp" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex lg:w-72 xl:w-80 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK57M7EWw/size_l.webp" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex lg:w-72 xl:w-80 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/Rz4W8evbxD/4W8eMvY1bx/size_l.jpg" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex lg:w-72 xl:w-80 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_l.jpg" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inside-list flex lg:w-72 xl:w-80 h-20 mx-5 items-center justify-between">
+                            <div class="a-left flex gap-x-10">
+                            <button class="queue-img w-14 group relative">
+                                <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/R7vKX6WmrP/vKX60dmPWm/size_l.webp" alt="">
+                                <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                            </button>
+                            <div class="a-middle flex flex-col justify-around">
+                                <div class="a-song-name text-md font-bold">
+                                    <h1>Song Name</h1>
+                                </div>
+                                <div class="a-artist text-xs">
+                                    <h3>Artist's Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <button class="queue-heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    <footer class="flex justify-center">
+        <div class="footer flex justify-around fixed bottom-4 lg:left-0 lg:bottom-0 w-11/12 sm:w-10/12 md:w-3/4 lg:w-full h-20 lg:h-24 z-40 border border-slate-200 rounded-md lg:rounded-none bg-gray-600 bg-opacity-95">
+            <div class="footer-left flex items-center justify-between gap-x-3">
+                <div class="a-left flex gap-x-3">
+                    <button class="queue-img w-14 group relative">
+                        <img class="transition-all ease-in-out duration-500 group-hover:opacity-50" src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK57M7EWw/size_l.webp" alt="">
+                        <i class="fa-solid fa-play hidden absolute top-5 left-6 group-hover:flex"></i>
+                    </button>
+                    <div class="a-middle flex flex-col justify-around">
+                        <div class="text-md font-bold">
+                        <h1>Song Name</h1>
+                        </div>
+                        <div class="text-xs">
+                        <h3>Nov 19,2023</h3>
+                        </div>
+                </div>
+            </div>
+            <div class="a-right">
+                <button class="queue-heart-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+        </div>
+            <div class="footer-right flex flex-col justify-center items-center w-44">
+                <div class="fr-top flex gap-x-5">
+                    <button>
+                        <i class="fas fa-shuffle"></i>
+                    </button>
+                    <button>
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button>
+                        <i class="fas fa-play"></i>         
+                    </button>
+                    <button>
+                        <i class="fas fa-forward"></i>
+                    </button>
+                    <button>
+                        <i class="fas fa-repeat"></i>
+                    </button>
+                </div>
+                <div class="fr-middle text-green-500">
+                    <div class="line relative">
+                        <h1>___________________</h1>
+                        <div class="circle absolute right-1/2 top-1/2 -translate-y-1/4">
+                            <h1><i class="fa-solid fa-circle"></i></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-bottom flex w-11/12 justify-between">
+                    <h1>1:39</h1>
+                    <h1>4:40</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
